@@ -66,12 +66,13 @@ Over time, Thia turns hundreds of conversations into meaningful, data-driven emp
 
 🪜 Installation
 Prerequisites
-
+```bash 
 Python 3.10+
 
 OpenAI API key
 (Get one at platform.openai.com
 )
+```
 
 Setup
 git clone https://github.com/<your-username>/Thia.git
