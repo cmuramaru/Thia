@@ -3,12 +3,12 @@
 Thia is an advanced, emotionally intelligent customer support agent that redefines how e-commerce platforms understand and assist customers.
 Originally designed for data collection, Thia evolved into a system that listens, learns, and reflects — turning individual interactions into collective insight.
 
-- [Key Features](#keyfeatures)
-- [How Thia Thinks](#howthiathinks)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Design Philosophy](#designphilosophy)
-- [Contributing](#contributing)
+- [Key Features](#🌟keyfeatures)
+- [How Thia Thinks](#🧠howthiathinks)
+- [Installation](#🪜installation)
+- [Usage](#🖥️usage)
+- [Design Philosophy](#🧍‍♀️designphilosophy)
+- [Contributing](#🧩contributing)
 
 ## 🌟 Key Features
 ### 🗣️ Conversational Empathy
