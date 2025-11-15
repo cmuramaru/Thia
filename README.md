@@ -1,133 +1,142 @@
-# Customer Care Bot 🤖
-The Customer Care Bot is a cutting-edge customer support solution designed to revolutionize the way e-commerce websites interact with and assist their customers. Powered by OpenAI's advanced GPT-3.5 language model, this intelligent bot offers a seamless and personalized customer service experience.
+### 🤖 Thia — The Empathetic Returns & Customer Care Bot
 
-## Key Features:
+Thia is an advanced, emotionally intelligent customer support agent that redefines how e-commerce platforms understand and assist customers.
+Originally designed for data collection, Thia evolved into a system that listens, learns, and reflects — turning individual interactions into collective insight.
 
-1. **Conversational Expertise:** The Customer Care Bot engages customers in dynamic, natural conversations, making them feel heard and understood. It replicates the warmth and effectiveness of human customer support.
+## 🌟 Key Features
+# 🗣️ Conversational Empathy
+Thia engages customers in warm, human-like conversations.
+She listens to frustration, confusion, or praise — and adapts her tone dynamically.
+Her goal isn’t just to respond, but to understand.
 
-2. **Efficient Query Resolution:** With its deep understanding of natural language, the bot efficiently addresses customer queries, providing precise and timely responses. Customers no longer need to wait for support staff to get answers.
+# ⚙️ Accurate & Context-Aware Query Resolution
+Thia analyzes every message for:
+- Sentiment (how the customer feels)
+- Reason (why they’re contacting support)
+- Action (what should be done next)
 
-3. **Product Recommendations:** Leveraging its knowledge of products and customer preferences, the bot can recommend relevant products, enhancing upselling and cross-selling opportunities.
+Then she provides the right solution or connects the issue to internal systems — all while maintaining emotional tone and context.
 
-4. **Info Extraction:** The bot excels at extracting critical information such as order IDs and product preferences from conversations. This feature streamline processes like order tracking and customization.
+# 💡 Two Personas
 
-5. **Context Management:** Throughout the conversation, the bot maintains context, enabling it to provide consistent and personalized assistance. Customers can switch topics or revisit previous questions seamlessly.
+Thia: Empathetic, reflective, caring — designed for high-touch communication.
+Tessa: Efficient, precise, business-like — designed for fast resolution.
 
-## Table of Contents
+Switch personas in chat with /mode thia or /mode tessa.
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+# 🧾 Info Extraction & Data Structuring
+Automatically extracts:
+- Order IDs
+- Return reasons
+- Emotional tone
+- Suggested actions
 
-## Introduction
-Welcome to the Customer Care Bot! This README provides an overview of the approach, methods, decisions, assumptions, and instructions for setting up and running the project.
+and stores them as structured JSON data for long-term learning.
 
-## Approach and Methods
+# 🔁 Short-Term Help, Long-Term Wisdom
 
-The Chatbot is designed to act as a customer support agent for an e-commerce site. It leverages the OpenAI language model for conversational interactions. The key functionalities include answering customer queries, providing product recommendations, and extracting order IDs and product preferences.
+Thia doesn’t just fix one issue — she remembers patterns.
+She aggregates all customer feedback over time to find shared pain points, revealing opportunities to improve:
+- Product quality
+- Delivery efficiency
+- Customer experience policies
 
-## Decisions Taken
+Her reflection engine helps companies solve root causes — not just surface problems.
 
-1. **Language Model:** OpenAI's GPT-3.5 is used for generating responses and maintaining conversations.
-2. **Memory Management:** A ConversationBufferMemory is employed to store and manage chat history.
-3. **Info Extraction:** An InfoExtraction module is created to extract order IDs and product preferences from conversations.
+######### 🧠 How Thia Thinks
 
-## Assumptions
+Every interaction follows three core steps:
 
-1. Users will interact with the bot in a conversational manner.
-2. The bot will maintain context within a session but will not store information across sessions(only locally for now).
-3. Users are interested in receiving accurate and helpful responses.
+Step	Process	Example
+1️⃣ Understand	Detects emotion & reason	“I’m sorry that shipment arrived late — that must’ve been frustrating.”
+2️⃣ Decide	Maps reason → best solution	Offers replacement, discount, or apology per policy
+3️⃣ Reflect	Logs emotion, reason & result	“Late deliveries = 43% of complaints this week.”
 
-## Prerequisites
+Over time, Thia turns hundreds of conversations into meaningful, data-driven empathy.
 
+🧩 Tech Stack
+Component	Purpose
+OpenAI GPT-3.5 / GPT-4	Generates responses and emotional reasoning
+LangChain	Manages conversational memory and document retrieval
+ChromaDB	Stores vectorized knowledge for contextual responses
+TextBlob / Sentiment Tools	Analyzes emotion and tone
+FastAPI (optional)	Exposes Thia as a web API endpoint
+JSON Storage	Saves history and extracted emotional data
+🪜 Installation
+Prerequisites
 
-- Python 3.10+
-- OpenAI API key
-- `venv` module (install with `pip install virtualenv` if needed)
+Python 3.10+
 
-## Installation
+OpenAI API key
+(Get one at platform.openai.com
+)
 
-Instructions on how to install and set up the project.
-
-```bash
-git clone https://github.com/subhan97ahmed/customer-care-bot.git
-cd customer-care-bot
-```
-
-
-<details>
-<summary>Create and Activate Virtual Environment</summary>
-<!--All you need is a blank line-->
-
-1. **Navigate to Project Directory:**
-    
-   ```bash
-    cd /path/to/your/project
-   ```
-
-2. **Create Virtual Environment:**
-    
-   For macOS and Linux:
-
-   ```bash
-   pip install virtualenv
-   python3 -m venv env
-   ```
-
-   For Windows:
-   ```bash
-   pip install virtualenv
-   python -m venv env
-   ```
-
-3. **Activate Virtual Environment:**
-
-   For macOS and Linux:
-
-   ```bash
-   source env/bin/activate
-   ```
-
-   For Windows:
-
-   ```bash
-   .\env\Scripts\activate
-   ```
-</details>
-
-
-```bash
+Setup
+git clone https://github.com/<your-username>/Thia.git
+cd Thia
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-```
 
-## Usage
-open main.py and add openai api key
-```python
-import os
-os.environ["OPENAI_API_KEY"] = "your-api-key"
-```
+Set API Key
+export OPENAI_API_KEY="sk-your-key-here"
 
-```bash
-# Run the application
-cd bot
-python main.py
-```
+🖥️ Usage
+Terminal Chat
+python bot/main.py
 
-### API Usage
-```bash
-# Run the application
-cd bot
-uvicorn api_endpoint:app --reload
-```
-open browser and go to http://127.0.0.1:8000/docs
 
-## Contributing
-Contributions to the Customer Care Bot project are welcome! If you'd like to contribute, please follow these guidelines:
+Then type messages like:
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes and commit them with clear, descriptive messages.
-- Push your branch to your forked repository.
-- Submit a pull request to the main repository, describing the changes you've made.
+User: I returned my package because it came broken.
+Bot: That must have been disappointing. Let me note that and see how we can make it right next time.
+
+Web API Mode
+uvicorn bot.api_endpoint:app --reload
+
+
+Open your browser to → http://127.0.0.1:8000/docs
+
+📊 Long-Term Reflection
+
+Thia’s user_likes.json and history.json capture emotional and operational data.
+Run her reflection analyzer (included in analyze_feedback.py) to summarize top recurring issues:
+
+Example Output:
+
+{
+  "top_reasons": [["late delivery", 43], ["damaged product", 28]],
+  "sentiment_summary": {"frustrated": 60, "satisfied": 25, "neutral": 15}
+}
+
+
+This report helps teams fix systemic problems, not just individual ones.
+
+🧍‍♀️ Design Philosophy
+
+Thia was built to prove that empathy is not a weakness — it’s a design advantage.
+Where traditional bots automate, Thia humanizes.
+Her mission is to turn “customer support” into “customer understanding.”
+
+“When empathy becomes a feature, it stops being artificial. It becomes evolution.”
+
+🧩 Contributing
+
+We welcome contributions to Thia’s emotional and technical growth!
+
+Fork the repository
+
+Create a branch
+
+Make your changes
+
+Submit a pull request
+
+If you’d like to help improve Thia’s reflection system (long-term empathy engine), check out the feedback_analysis module and contribute clustering, visualization, or sentiment-trend analysis improvements.
+
+❤️ Credits
+
+Developed with purpose and compassion —
+Thia, the empathetic returns agent for a more human future.
+
+Would you like me to include a short "Team Reflection Section" at the bottom (something like “How Thia’s reflections inform company strategy without exposing personal data”)? That would fit your “let the team know, but keep the customer on the surface” idea perfectly.
