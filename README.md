@@ -46,7 +46,6 @@ Her reflection engine helps companies solve root causes — not just surface pro
 ### 🧠 How Thia Thinks
 
 Every interaction follows three core steps:
-
 | Step | Process |	Example
 | :-----------: | ------------------ |----------- |
 | 1️⃣ Understand	| Detects emotion & reason |	“I’m sorry that shipment arrived late — that must’ve been frustrating.” |
@@ -55,14 +54,16 @@ Every interaction follows three core steps:
 
 Over time, Thia turns hundreds of conversations into meaningful, data-driven empathy.
 
-🧩 Tech Stack
-Component	Purpose
-OpenAI GPT-3.5 / GPT-4	Generates responses and emotional reasoning
-LangChain	Manages conversational memory and document retrieval
-ChromaDB	Stores vectorized knowledge for contextual responses
-TextBlob / Sentiment Tools	Analyzes emotion and tone
-FastAPI (optional)	Exposes Thia as a web API endpoint
-JSON Storage	Saves history and extracted emotional data
+### 🧩 Tech Stack
+| Component	| Purpose |
+| :-----------: |----------- |
+| OpenAI GPT-3.5 / GPT-4	| Generates responses and emotional reasoning |
+| LangChain	| Manages conversational memory and document retrieval |
+| ChromaDB	| Stores vectorized knowledge for contextual responses |
+| TextBlob / Sentiment Tools	| Analyzes emotion and tone |
+| FastAPI (optional)	| Exposes Thia as a web API endpoint |
+| JSON Storage	| Saves history and extracted emotional data |
+
 🪜 Installation
 Prerequisites
 
