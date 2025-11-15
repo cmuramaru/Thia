@@ -3,6 +3,13 @@
 Thia is an advanced, emotionally intelligent customer support agent that redefines how e-commerce platforms understand and assist customers.
 Originally designed for data collection, Thia evolved into a system that listens, learns, and reflects — turning individual interactions into collective insight.
 
+- [Key Features](#keyfeatures)
+- [How Thia Thinks](#howthiathinks)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Design Philosophy](#designphilosophy)
+- [Contributing](#contributing)
+
 ## 🌟 Key Features
 ### 🗣️ Conversational Empathy
 Thia engages customers in warm, human-like conversations.
@@ -43,7 +50,7 @@ She aggregates all customer feedback over time to find shared pain points, revea
 
 Her reflection engine helps companies solve root causes — not just surface problems.
 
-### 🧠 How Thia Thinks
+## 🧠 How Thia Thinks
 
 Every interaction follows three core steps:
 | Step | Process |	Example
@@ -54,7 +61,7 @@ Every interaction follows three core steps:
 
 Over time, Thia turns hundreds of conversations into meaningful, data-driven empathy.
 
-### 🧩 Tech Stack
+## 🧩 Tech Stack
 | Component	| Purpose |
 | :-----------: |----------- |
 | OpenAI GPT-3.5 / GPT-4	| Generates responses and emotional reasoning |
@@ -64,8 +71,8 @@ Over time, Thia turns hundreds of conversations into meaningful, data-driven emp
 | FastAPI (optional)	| Exposes Thia as a web API endpoint |
 | JSON Storage	| Saves history and extracted emotional data |
 
-### 🪜 Installation
-#### Prerequisites
+## 🪜 Installation
+### Prerequisites
 ```bash 
 Python 3.10+
 
@@ -74,7 +81,7 @@ OpenAI API key
 )
 ```
 
-#### Setup
+### Setup
 ```bash
 git clone https://github.com/<your-username>/Thia.git
 cd Thia
@@ -86,7 +93,7 @@ Set API Key
 export OPENAI_API_KEY="sk-your-key-here"
 ```
 
-### 🖥️ Usage
+## 🖥️ Usage
 ```bash
 Terminal Chat
 python bot/main.py
@@ -104,12 +111,12 @@ uvicorn bot.api_endpoint:app --reload
 
 Open your browser to → http://127.0.0.1:8000/docs
 
-### 📊 Long-Term Reflection
+## 📊 Long-Term Reflection
 
 Thia’s user_likes.json and history.json capture emotional and operational data.
 Run her reflection analyzer (included in analyze_feedback.py) to summarize top recurring issues:
 
-#### Example Output:
+### Example Output:
 ```bash
 {
   "top_reasons": [["late delivery", 43], ["damaged product", 28]],
@@ -119,7 +126,7 @@ Run her reflection analyzer (included in analyze_feedback.py) to summarize top r
 
 This report helps teams fix systemic problems, not just individual ones.
 
-### 🧍‍♀️ Design Philosophy
+## 🧍‍♀️ Design Philosophy
 
 Thia was built to prove that empathy is not a weakness — it’s a design advantage.
 Where traditional bots automate, Thia humanizes.
@@ -127,7 +134,7 @@ Her mission is to turn “customer support” into “customer understanding.”
 
 “When empathy becomes a feature, it stops being artificial. It becomes evolution.”
 
-### 🧩 Contributing
+## 🧩 Contributing
 
 We welcome contributions to Thia’s emotional and technical growth!
 
@@ -138,7 +145,7 @@ Submit a pull request
 
 If you’d like to help improve Thia’s reflection system (long-term empathy engine), check out the feedback_analysis module and contribute clustering, visualization, or sentiment-trend analysis improvements.
 
-### ❤️ Credits
+## ❤️ Credits
 
 Developed with purpose and compassion —
 Thia, the empathetic returns agent for a more human future.
