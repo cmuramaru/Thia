@@ -110,7 +110,7 @@ Thia’s user_likes.json and history.json capture emotional and operational data
 Run her reflection analyzer (included in analyze_feedback.py) to summarize top recurring issues:
 
 #### Example Output:
-`` `bash
+```bash
 {
   "top_reasons": [["late delivery", 43], ["damaged product", 28]],
   "sentiment_summary": {"frustrated": 60, "satisfied": 25, "neutral": 15}
@@ -119,7 +119,7 @@ Run her reflection analyzer (included in analyze_feedback.py) to summarize top r
 
 This report helps teams fix systemic problems, not just individual ones.
 
-🧍‍♀️ Design Philosophy
+### 🧍‍♀️ Design Philosophy
 
 Thia was built to prove that empathy is not a weakness — it’s a design advantage.
 Where traditional bots automate, Thia humanizes.
@@ -127,23 +127,19 @@ Her mission is to turn “customer support” into “customer understanding.”
 
 “When empathy becomes a feature, it stops being artificial. It becomes evolution.”
 
-🧩 Contributing
+### 🧩 Contributing
 
 We welcome contributions to Thia’s emotional and technical growth!
 
 Fork the repository
-
 Create a branch
-
 Make your changes
-
 Submit a pull request
 
 If you’d like to help improve Thia’s reflection system (long-term empathy engine), check out the feedback_analysis module and contribute clustering, visualization, or sentiment-trend analysis improvements.
 
-❤️ Credits
+### ❤️ Credits
 
 Developed with purpose and compassion —
 Thia, the empathetic returns agent for a more human future.
 
-Would you like me to include a short "Team Reflection Section" at the bottom (something like “How Thia’s reflections inform company strategy without exposing personal data”)? That would fit your “let the team know, but keep the customer on the surface” idea perfectly.
