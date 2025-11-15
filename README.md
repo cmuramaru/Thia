@@ -64,8 +64,8 @@ Over time, Thia turns hundreds of conversations into meaningful, data-driven emp
 | FastAPI (optional)	| Exposes Thia as a web API endpoint |
 | JSON Storage	| Saves history and extracted emotional data |
 
-🪜 Installation
-Prerequisites
+### 🪜 Installation
+#### Prerequisites
 ```bash 
 Python 3.10+
 
@@ -74,7 +74,8 @@ OpenAI API key
 )
 ```
 
-Setup
+#### Setup
+```bash
 git clone https://github.com/<your-username>/Thia.git
 cd Thia
 python3 -m venv venv
@@ -83,35 +84,38 @@ pip install -r requirements.txt
 
 Set API Key
 export OPENAI_API_KEY="sk-your-key-here"
+```
 
-🖥️ Usage
+### 🖥️ Usage
+```bash
 Terminal Chat
 python bot/main.py
-
+```
 
 Then type messages like:
 
 User: I returned my package because it came broken.
 Bot: That must have been disappointing. Let me note that and see how we can make it right next time.
 
+```bash
 Web API Mode
 uvicorn bot.api_endpoint:app --reload
-
+```
 
 Open your browser to → http://127.0.0.1:8000/docs
 
-📊 Long-Term Reflection
+### 📊 Long-Term Reflection
 
 Thia’s user_likes.json and history.json capture emotional and operational data.
 Run her reflection analyzer (included in analyze_feedback.py) to summarize top recurring issues:
 
-Example Output:
-
+#### Example Output:
+`` `bash
 {
   "top_reasons": [["late delivery", 43], ["damaged product", 28]],
   "sentiment_summary": {"frustrated": 60, "satisfied": 25, "neutral": 15}
 }
-
+```
 
 This report helps teams fix systemic problems, not just individual ones.
 
