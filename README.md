@@ -1,15 +1,15 @@
-### 🤖 Thia — The Empathetic Returns & Customer Care Bot
+# 🤖 Thia — The Empathetic Returns & Customer Care Bot
 
 Thia is an advanced, emotionally intelligent customer support agent that redefines how e-commerce platforms understand and assist customers.
 Originally designed for data collection, Thia evolved into a system that listens, learns, and reflects — turning individual interactions into collective insight.
 
 ## 🌟 Key Features
-# 🗣️ Conversational Empathy
+### 🗣️ Conversational Empathy
 Thia engages customers in warm, human-like conversations.
 She listens to frustration, confusion, or praise — and adapts her tone dynamically.
 Her goal isn’t just to respond, but to understand.
 
-# ⚙️ Accurate & Context-Aware Query Resolution
+### ⚙️ Accurate & Context-Aware Query Resolution
 Thia analyzes every message for:
 - Sentiment (how the customer feels)
 - Reason (why they’re contacting support)
@@ -17,14 +17,14 @@ Thia analyzes every message for:
 
 Then she provides the right solution or connects the issue to internal systems — all while maintaining emotional tone and context.
 
-# 💡 Two Personas
+### 💡 Two Personas
 
 Thia: Empathetic, reflective, caring — designed for high-touch communication.
 Tessa: Efficient, precise, business-like — designed for fast resolution.
 
 Switch personas in chat with /mode thia or /mode tessa.
 
-# 🧾 Info Extraction & Data Structuring
+### 🧾 Info Extraction & Data Structuring
 Automatically extracts:
 - Order IDs
 - Return reasons
@@ -33,7 +33,7 @@ Automatically extracts:
 
 and stores them as structured JSON data for long-term learning.
 
-# 🔁 Short-Term Help, Long-Term Wisdom
+### 🔁 Short-Term Help, Long-Term Wisdom
 
 Thia doesn’t just fix one issue — she remembers patterns.
 She aggregates all customer feedback over time to find shared pain points, revealing opportunities to improve:
@@ -43,14 +43,15 @@ She aggregates all customer feedback over time to find shared pain points, revea
 
 Her reflection engine helps companies solve root causes — not just surface problems.
 
-######### 🧠 How Thia Thinks
+### 🧠 How Thia Thinks
 
 Every interaction follows three core steps:
 
-Step	Process	Example
-1️⃣ Understand	Detects emotion & reason	“I’m sorry that shipment arrived late — that must’ve been frustrating.”
-2️⃣ Decide	Maps reason → best solution	Offers replacement, discount, or apology per policy
-3️⃣ Reflect	Logs emotion, reason & result	“Late deliveries = 43% of complaints this week.”
+| Step | Process |	Example
+| :-----------: | ------------------ |----------- |
+| 1️⃣ Understand	| Detects emotion & reason |	“I’m sorry that shipment arrived late — that must’ve been frustrating.” |
+| 2️⃣ Decide	| Maps reason → best solution	| Offers replacement, discount, or apology per policy |
+| 3️⃣ Reflect |Logs emotion, reason & result	| “Late deliveries = 43% of complaints this week.” |
 
 Over time, Thia turns hundreds of conversations into meaningful, data-driven empathy.
 
