@@ -11,7 +11,7 @@ Originally designed for data collection, Thia evolved into a system that listens
 - [Design Philosophy](#design-philosophy)
 - [Contributing](#contributing)
 
-## 🌟 Key Features
+## Key Features 🌟
 ### 🗣️ Conversational Empathy
 Thia engages customers in warm, human-like conversations.
 She listens to frustration, confusion, or praise — and adapts her tone dynamically.
@@ -51,7 +51,7 @@ She aggregates all customer feedback over time to find shared pain points, revea
 
 Her reflection engine helps companies solve root causes — not just surface problems.
 
-## 🧠 How Thia Thinks
+## How Thia Thinks 🧠
 
 Every interaction follows three core steps:
 | Step | Process |	Example
@@ -72,7 +72,7 @@ Over time, Thia turns hundreds of conversations into meaningful, data-driven emp
 | FastAPI (optional)	| Exposes Thia as a web API endpoint |
 | JSON Storage	| Saves history and extracted emotional data |
 
-## 🪜 Installation
+## Installation 🪜
 ### Prerequisites
 ```bash 
 Python 3.10+
@@ -94,7 +94,7 @@ Set API Key
 export OPENAI_API_KEY="sk-your-key-here"
 ```
 
-## 🖥️ Usage
+## Usage 🖥️
 ```bash
 Terminal Chat
 python bot/main.py
@@ -127,7 +127,7 @@ Run her reflection analyzer (included in analyze_feedback.py) to summarize top r
 
 This report helps teams fix systemic problems, not just individual ones.
 
-## 🧍‍♀️ Design Philosophy
+## Design Philosophy 🧍‍♀️
 
 Thia was built to prove that empathy is not a weakness — it’s a design advantage.
 Where traditional bots automate, Thia humanizes.
@@ -135,7 +135,7 @@ Her mission is to turn “customer support” into “customer understanding.”
 
 “When empathy becomes a feature, it stops being artificial. It becomes evolution.”
 
-## 🧩 Contributing
+## Contributing 🧩
 
 We welcome contributions to Thia’s emotional and technical growth!
 
